@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b003e62f20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>tick-it</title>
+</head>
+<body>
+    <div class="head" style="backdrop-filter: blur(12.5px);">
+        <div class="logo">
+            <i class="fa-solid fa-receipt"></i>
+            <a>tick-it</a>
+            
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#tec">Producto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>  
+    </div>
+
+    <section class="content-funcionamiento">
+        <h2 class="title">Tick-it</h2>
+        <div class="box-container">
+            <p>
+                Imagina un mundo donde tus clientes ya no tienen que perder tiempo esperando en largas filas físicas. Con tick-it, estamos transformando la experiencia del cliente. ¡Haz que tus clientes se sientan valorados y contribuye a un futuro más verde con nuestra solución de colas virtuales!
+                <br>
+                En resumen, tick-it es la solución que combina comodidad, sostenibilidad y seguridad. ¡Únete a la revolución de las colas virtuales y ofrece a tus clientes una experiencia sin estrés y amigable con el medio ambiente!
+
+            </p>
+
+            <div class="video">
+                <video autoplay muted loop style="width: 500px; height: 400px;">
+                    <source src="img/video_bosque.mp4" type="video/mp4">
+            </div>
+            <div class="imagen">
+                <img src="img/telefono.png" width="100px">
+                <p>Con solo unos pocos clics, tus clientes pueden unirse a la cola desde la comodidad de sus dispositivos móviles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-tecnologia" id="tec">
+        <h2 class="title">Tecnología</h2>
+        <div class="btn-container">
+            <a href="#tec-qr" class="btn-tec">QR</a>
+            <a href="#tec-nfc" class="btn-tec">NFC</a>
+        </div>
+        <figure>
+            <img src="img/frame.png" id="tec-qr">
+            <img src="img/NFC_logo.svg.png" id="tec-nfc">
+        </figure>
+    </section>
+
+
+    <section class="content-why">
+        <h2 class="title">¿Por qué tick-it?</h2>
+        <div class="section-container">
+            
+            <div class="panels-container">
+                <div class="panel-izquierdo">
+                    <h2 class="title">Beneficios</h2>
+                    <p>
+                        las empresas que ofrecen opciones de espera virtual
+                        experimentan un aumento del 20% en la <strong>fidelidad</strong> del cliente.
+                        <br>
+                        Esto se traduce directamente en  <strong>mayores ingresos</strong> y una <strong>ventaja competitiva</strong> 
+                        notable para las empresas que adoptan esta tecnología.
+                    </p>
+                    <img src="img/beneficios.png">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 1250) {
+                    document.querySelector('.panel-izquierdo').style.transform = 'translateX(0)';
+                } else {
+                    document.querySelector('.panel-izquierdo').style.transform = 'translateX(-200%)';
+                }
+            });
+        </script>
+
+        <div class="section-container">
+            <div class="panels-container">
+                <div class="panel-derecho">
+                    <h2 class="title">Customer Experience</h2>
+                    <p>
+                        El 85% de los clientes <strong>prefieren</strong> esperar de manera virtual en lugar de hacerlo en persona.
+                        <br>
+                        La flexibilidad que brinda lleva al 70% de los encuestados a decir que estarían dispuestos 
+                        a <strong>pagar un poco más</strong> por un servicio que les permita evitar las colas físicas
+                    </p>
+                    <img src="img/servicio-al-cliente.png">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 1900) {
+                    document.querySelector('.panel-derecho').style.transform = 'translateX(0%)';
+                } else {
+                    document.querySelector('.panel-derecho').style.transform = 'translateX(200%)';
+                }
+            });
+        </script>
+
+        <div class="section-container">
+            <div class="panels-container">
+                <div class="panel-izquierdo2">
+                    <h2 class="title">Eco-friendly</h2>
+                    <p>
+                        Se estima que al eliminar el uso de recibos 
+                        y otros documentos impresos asociados con la gestión de colas tradicionales,
+                        una empresa puede ahorrar hasta <strong>1 tonelada de papel al año</strong>.
+                        <br>
+                        ¡Sé un negocio activo a favor de preservar los <strong>recursos naturales</strong>  
+                        y reducir la <strong>contaminación</strong> del aire 
+                        y el agua asociada con la fabricación de papel!
+                    </p>
+                    <img src="img/salve-el-planeta.png">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+
+                if (scrollPosition > 2600) {
+                    document.querySelector('.panel-izquierdo2').style.transform = 'translateX(0)';
+                } else {
+                    document.querySelector('.panel-izquierdo2').style.transform = 'translateX(-200%)';
+                }
+            });
+        </script>
+    </section>
+
+    <section class="content-planes">
+        <h2 class="title">PLANES</h2>
+        <table>
+            <tr>
+                <th>Plan Básico</th>
+                <th>Plan Premium</th>
+                <th>Plan Pro Expert</th>
+            </tr>
+            <tr>
+                <td>Gestor de Colas Básico</td>
+                <td>Gestor de Colas Pro</td>
+                <td>Gestor de Colas Pro</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Gestión Inteligente y Soporte Técnico</td>
+                <td>Gestión Inteligente y Soporte Técnico</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Análisis y Visualización de datos </td>
+            </tr>
+            <tr>
+                <td><strong>GRATIS</strong></td>
+                <td>9,99$</td>
+                <td>11,99$</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="content-vision">
+        <h2 class="title">¿Qué queremos y a dónde vamos?</h2>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-users"></i>                
+                <h3 class="title">Vision</h3>
+                <p>En tick-it, nos esforzamos por liderar la revolución de las experiencias sin colas,
+                     donde la espera se transforma en comodidad y satisfacción. Nos vemos como pioneros
+                      en la eliminación de las colas físicas, ofreciendo soluciones tecnológicas innovadoras
+                       que cambian la forma en que las empresas y los clientes interactúan. Nuestro objetivo
+                        es crear un mundo donde la espera se convierta en una experiencia cómoda y
+                         personalizada, contribuyendo así a un futuro más eficiente y conectado
+                </p>
+            </div>
+            <div class="box">
+                <i class="fa-regular fa-paper-plane"></i>
+                <h3 class="title">Mision</h3>
+                <p>En tick-it, nuestra misión es revolucionar la experiencia de espera,
+                    eliminando las colas físicas y brindando a nuestros clientes la libertad de aprovechar
+                    al máximo su tiempo. Nos esforzamos por ofrecer soluciones tecnológicas innovadoras 
+                    que no solo mejoren la eficiencia operativa de las empresas, sino que también
+                    proporcionen comodidad y satisfacción a los clientes. Nos comprometemos a ofrecer 
+                    un servicio excepcional y a contribuir al desarrollo de un futuro más eficiente y 
+                    conectado, donde la espera ya no sea un obstáculo, 
+                    sino una oportunidad para disfrutar de una experiencia más personalizada y conveniente
+               </p>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <!--Contacto ahora está en otra página
+    <section class="content-contact">
+        <h2 class="title">Contacto</h2>
+                <form action="./files/form.html" method="post">
+                    <div class="form__container">
+                        <input type="text" name="name" id="name_id" placeholder="Nombre:" class="form__input" required>
+                        <input type="tel" name="phone" id="phone_id" placeholder="Teléfono:" class="form__input">                            
+                        <input type="email" name="email" id="email_id" placeholder="Correo:" class="form__input" required>
+                        <textarea rows="2" cols="25" name="comentarios" id="comentarios_id" placeholder="Comentario: (Opcional)" class="form__input--message"></textarea>
+                        <input type="submit" value="Enviar" class="form__cta">
+
+                    </div>
+                </form>
+    </section>
+    -->
+    <section class="content-final">
+        <footer class="pie-pagina">
+            <div class="container">
+                <div class="box">
+                    <figure>
+                        <img src="img/logo.png">
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        Somos un equipo de tres jóvenes estudiantes que compartimos
+                        una visión común: la creencia de que la reducción de la brecha digital 
+                        puede ser un medio para un planeta más saludable. Nos unimos con 
+                        la determinación de aprovechar nuestras habilidades y conocimientos para 
+                        marcar una diferencia en el medioambiente .
+                        Nuestra inspiración surge de la frustación de esperar y perder el tiempo
+                        en colas físicas interminables. Nos sentimos impulsados a actuar para obtener
+                        una mejora en la experiencia del cliente y por el camino ralentizar el cambio climático.
+                    </p>
+                    </div>
+                <div class="box">
+                    <h2>Escríbenos</h2>
+                    <div class="correo">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <small>&copy; 2024 <b>tick-it</b> - Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>

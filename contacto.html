@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contacto.css">
+    <script src="https://kit.fontawesome.com/b003e62f20.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="">
+    <title>tick-it</title>
+</head>
+<body>
+    <div class="head" style="backdrop-filter: blur(12.5px);">
+        <div class="logo">
+            <i class="fa-solid fa-receipt"></i>
+            <a href="#">tick-it</a>
+            
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#tec">Producto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>  
+    </div>
+
+    <section class="content-contact">
+        <video src="img/video_estrellas.mp4" autoplay="true" muted="true" loop="true"></video>
+        <h2 class="title">Contacto</h2>
+                <form action="./files/form.html" method="post">
+                    <div class="form__container">
+                        <input type="text" name="name" id="name_id" placeholder="Nombre:" class="form__input" required>
+                        <input type="tel" name="phone" id="phone_id" placeholder="Teléfono:" class="form__input">                            
+                        <input type="email" name="email" id="email_id" placeholder="Correo:" class="form__input" required>
+                        <textarea rows="2" cols="25" name="comentarios" id="comentarios_id" placeholder="Comentario: (Opcional)" class="form__input--message"></textarea>
+                        <input type="submit" value="Enviar" class="form__cta">
+                    </div>
+                </form>
+    </section>
+
+    
+    <section class="content-final">
+        <footer class="pie-pagina">
+            <div class="container">
+                <div class="box">
+                    <figure>
+                        <img src="img/logo.png">
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre Nosotros</h2>
+                    <p>
+                        Somos un equipo de tres jóvenes estudiantes que compartimos
+                        una visión común: la creencia de que la reducción de la brecha digital 
+                        puede ser un medio para un planeta más saludable. Nos unimos con 
+                        la determinación de aprovechar nuestras habilidades y conocimientos para 
+                        marcar una diferencia en el medioambiente .
+                        Nuestra inspiración surge de la frustación de esperar y perder el tiempo
+                        en colas físicas interminables. Nos sentimos impulsados a actuar para obtener
+                        una mejora en la experiencia del cliente y por el camino ralentizar el cambio climático.
+                    </p>  
+                </div>
+                <div class="box">
+                    <h2>Escríbenos</h2>
+                    <div class="correo">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa-regular fa-envelope"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <small>&copy; 2024 <b>tick-it</b> - Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* Colores principales: #EBF2FA azul clarito #CDD7D6 azul zen
+Color secundario fuerte: #011936 oxford blue #048A81 azul cyan
+Color de ancento: #F24236 Vermilion
+*/
+*{
+    margin: 0;
+    padding:0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    display: grid;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color:(255, 255, 255, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a, i {
+    color:white;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #011936;
+    color: white;
+    transition: .8s ease-out;
+
+    border: 1px solid #bbb0b0;
+    border-radius: 10px;
+}
+
+.content-funcionamiento {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF2FA;
+}
+
+.content-funcionamiento .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    /*text-align: centers;*/
+}
+
+.content-funcionamiento .box-container .imagen {
+    padding : 40px;
+}
+
+.content-funcionamiento .box-container p {
+    text-transform: uppercase;
+    padding : 40px;
+}
+
+.title {
+    padding-top: 40px;
+    margin-bottom: 0px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/*Contacto*/
+.content-contact {
+    position:static;
+    padding-top:70px;
+    /*background-color: #EBF2FA;*/
+    height: 120vh;
+}
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    z-index: -1;
+  }
+
+
+.content-contact h2 {
+    margin-bottom: 20px;
+}
+
+.content-contact form {
+    width: 90%;
+    max-width:400px;
+    padding-bottom: 20px;
+    background: #CDD7D6;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 10px 10px #686b6e;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+.content-contact .form__container {
+    width: 100%;
+    display: grid;
+    gap:1em;
+    grid-auto-columns: 100%;
+}
+
+.content-contact h3{
+    font-weight: 400;
+    font-size: 40px;
+    color: #F24236;
+    margin-bottom: 40px;
+}
+
+.content-contact .form__container .form__input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+
+.content-contact .form__container .form__input--message {
+    resize:none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+    font-family: inherit;
+}
+
+.content-contact .form__container .form__cta {
+    font-family: inherit;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    background-color: #F24236;
+    
+}
+/*Parte final*/
+.content-final {
+
+    height: 60vh;
+    background-color: #011936;
+}
+.pie-pagina {
+    width: 100%;
+}
+
+.pie-pagina .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 50px;
+    padding: 10px 0px;
+}
+
+.pie-pagina .container .box figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .container .box figure img {
+    padding-top: 20vh;
+    
+    width:250px;
+
+}
+
+.pie-pagina .container .box h2 {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.pie-pagina .container .box p {
+    color: white;
+    text-align: justify;
+    
+}
+.pie-pagina .container .correo a {
+    display:inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #011936;
+}
+
+.pie-pagina .container2 {
+    padding-bottom: 15px;
+    padding-top: 10vh;
+}
+
+
+
