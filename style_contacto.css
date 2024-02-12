@@ -187,18 +187,21 @@ video {
     padding: 10px 0px;
 }
 
-.pie-pagina .container .box figure{
+.pie-pagina .container .box .lista{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pie-pagina .container .box figure img {
     padding-top: 20vh;
+}
+
+.pie-pagina .container .box .lista li {
+    list-style:circle;
+
+    color: white;
     
-    width:250px;
 
 }
+
 
 .pie-pagina .container .box h2 {
     color: white;
